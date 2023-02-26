@@ -19,11 +19,13 @@ import { SortContext } from '../../context/sortContext';
 import { FaqPage } from '../../pages/FAQPage/faq-page';
 import { FavoritePage } from '../../pages/FavoritePage/favorite-page';
 
+
 function App() {
   const [cards, setCards] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [currentUser, setCurrentUser] = useState(null)
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
+
   const debounceSearchQuery = useDebounce(searchQuery, 300);
   const [favorites, setFavorites] = useState([]);
   const [selectedTabId, setSelectedTabId] = useState("cheap");

@@ -3,9 +3,11 @@
 * {
 	box-sizing: inherit;
 }
+
 html {
 	box-sizing: border-box;
 }
+
 body {
 	font-family: "Nunito", "Arial", "Helvetica", sans-serif;
 }
@@ -35,4 +37,8 @@ img {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+}
+
+a:hover {
+	cursor: pointer;
 }
